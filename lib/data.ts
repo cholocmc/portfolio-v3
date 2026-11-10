@@ -220,6 +220,7 @@ export const skills: SkillRow[] = [
       s("Dart", "dart"),
       s("Flutter", "flutter"),
       s("Firebase", "firebase"),
+      s("Supabase", "supabase"),
     ],
   },
   {
