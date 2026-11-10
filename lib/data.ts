@@ -129,6 +129,7 @@ export type Project = {
   img: string;
   alt: string;
   link?: string;
+  site?: string;
   desc: string[];
   tags: string[];
 };
@@ -136,6 +137,19 @@ export type Project = {
 export const projects: Project[] = [
   {
     idx: "P/01",
+    title: "Monthly Budget Tracker",
+    img: "/projects/budget-tracker.jpg",
+    alt: "Screenshot of the Monthly Budget Tracker web app",
+    link: "https://github.com/cholocmc/budget-tracker",
+    site: "https://budget-tracker-cmc.vercel.app/",
+    desc: [
+      "Monthly Budget Tracker is a shared household budgeting web app. Users set a budget for each category, log what they actually spend, and see the gap every month through a chart that compares planned against actual spending.",
+      "Members join a household with a shared code, so everyone can add, edit, and track bills, owners, and due dates in one place. Recurring bills can be copied over to the next month, and the app works on both phone and desktop in light or dark mode.",
+    ],
+    tags: ["TypeScript", "Next.js", "Supabase"],
+  },
+  {
+    idx: "P/02",
     title: "Komunidad",
     img: "/projects/komunidad.jpg",
     alt: "Screenshot of the Komunidad mobile app",
@@ -146,7 +160,7 @@ export const projects: Project[] = [
     tags: ["Flutter", "Firebase", "Java"],
   },
   {
-    idx: "P/02",
+    idx: "P/03",
     title: "Sign Me Up",
     img: "/projects/sign-me-up.jpg",
     alt: "Screenshot of the Sign Me Up sign language translator",
@@ -158,7 +172,7 @@ export const projects: Project[] = [
     tags: ["Android Studio", "TensorFlow"],
   },
   {
-    idx: "P/03",
+    idx: "P/04",
     title: "Super Smash Bros",
     img: "/projects/super-smash-bros.jpg",
     alt: "Screenshot of the Super Smash Bros multiplayer game",

@@ -32,9 +32,34 @@ export function Projects() {
 
               <div className="flex min-w-0 flex-[1.2_1_420px] flex-col gap-[18px] p-[clamp(20px,3vw,40px)]">
                 <div className="flex flex-wrap items-center justify-between gap-3">
-                  <h3 className="m-0 text-[clamp(24px,2.4vw,32px)] leading-[1.15] font-semibold tracking-[-0.02em]">
-                    {p.title}
-                  </h3>
+                  <div className="flex min-w-0 flex-col">
+                    <h3 className="m-0 text-[clamp(24px,2.4vw,32px)] leading-[1.15] font-semibold tracking-[-0.02em]">
+                      {p.title}
+                    </h3>
+                    {p.site && (
+                      <a
+                        href={p.site}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="-mb-2.5 inline-flex min-h-11 items-center gap-1.5 self-start font-mono text-[13px] break-all text-muted underline-offset-4 transition-colors hover:text-fg hover:underline"
+                      >
+                        {p.site.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                        <svg
+                          aria-hidden="true"
+                          width="12"
+                          height="12"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                          className="shrink-0"
+                        >
+                          <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                   {p.link && (
                     <a
                       href={p.link}
