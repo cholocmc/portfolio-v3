@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cholo Canonizado",
+  title: "CholoCMC",
   description:
     "Carlos Miguel (Cholo) Canonizado — software engineer and Tech Lead building conversational AI agents, frontends, and browser extensions.",
 };
