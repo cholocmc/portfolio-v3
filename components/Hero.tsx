@@ -16,7 +16,7 @@ export function Hero() {
           >
             Carlos Miguel <span className="text-muted">(Cholo)</span> Canonizado
           </h1>
-          <p className="mt-8 max-w-[640px] text-[clamp(17px,1.6vw,20px)] leading-[1.6] text-soft">
+          <p className="mt-8 max-w-[640px] text-[clamp(17px,1.6vw,19px)] leading-[1.6] text-soft">
             I&apos;m a software engineer who has been shipping for the web and mobile since 2019. Today, I&apos;m a
             Tech Lead at First Mate Technologies, designing and tuning conversational AI agents for enterprise
             clients. Before that, I led the frontend team behind the{" "}
