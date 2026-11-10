@@ -3,6 +3,8 @@ export const APOLLO_EXTENSION_URL =
 
 export const EMAIL = "canonizadocarlos@gmail.com";
 
+export const GITHUB_USERNAME = "cholocmc";
+
 export const navLinks = [
   { id: "work", label: "Work experience" },
   { id: "projects", label: "Projects" },
@@ -148,7 +150,7 @@ export const projects: Project[] = [
     title: "Sign Me Up",
     img: "/projects/sign-me-up.jpg",
     alt: "Screenshot of the Sign Me Up sign language translator",
-    link: "https://github.com/ccanonizado/sign-language-translator",
+    link: "https://github.com/cholocmc/sign-language-translator",
     desc: [
       "Sign Me Up is the undergraduate research output that I presented which is equivalent to a thesis project. It is a sign language translator that captures still images of hand signs and then translates them into letter/words. It also has a database of hand signals that people can refer to if they want to communicate with a deaf person.",
       "Convolutional Neural Network was used to train the data with the help of TensorFlow. This project won best in research for the Computer Science category during the 2nd ICS Mini-Symposium held at the University of the Philippines, Los Baños, Laguna.",
@@ -160,7 +162,7 @@ export const projects: Project[] = [
     title: "Super Smash Bros",
     img: "/projects/super-smash-bros.jpg",
     alt: "Screenshot of the Super Smash Bros multiplayer game",
-    link: "https://github.com/ccanonizado/super-smash-bros",
+    link: "https://github.com/cholocmc/super-smash-bros",
     desc: [
       "Super Smash Bros is a Python and Protobuf implementation of the classic Super Smash Bros arcade game. This game is multiplayer and can accommodate up to 6 players. It also has a chat functionality among its players.",
       "This is the first multiplayer game that I, along with my teammates, created. This project also got featured in the UPLB Institute of Computer Science exhibit last 2019.",

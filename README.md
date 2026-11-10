@@ -10,7 +10,8 @@ Built with Next.js and Tailwind CSS from a Claude Design canvas, with matching d
 - **Smooth section navigation.** Nav links ease each section's top to just below the sticky header. This also works when the header wraps to two rows on phones. It respects `prefers-reduced-motion`, and the visitor can interrupt it by scrolling.
 - **Mobile-first, responsive layout.** Fluid type and flex-wrap layouts, with no horizontal scroll at phone widths and touch targets of at least 44px.
 - **Accessible markup.** Semantic landmarks and labelled sections, visible focus rings, and decorative images hidden from screen readers.
-- **Fully static.** Every page is prerendered at build time.
+- **GitHub contributions graph.** A monochrome, theme-aware heatmap of the last year's contributions sits at the top of Projects. Its data is refreshed daily.
+- **Static.** Every page is prerendered and regenerated once a day to pick up new contribution data.
 
 ## Tech stack
 
@@ -66,6 +67,7 @@ All copy and links live in [`lib/data.ts`](lib/data.ts):
 - **Projects:** edit `projects`. Put the screenshot in `public/projects/`. Leave out `link` to hide the GitHub button.
 - **Skills:** edit `skills`. Add a monochrome SVG icon to `public/icons/`; it is inverted automatically in dark mode.
 - **Contact:** edit `EMAIL` and `socials`.
+- **Contributions graph:** set `GITHUB_USERNAME`.
 
 Theme colors are defined once as CSS variables in [`app/globals.css`](app/globals.css), for light in `:root` and for dark in `.dark`. Components use them through Tailwind classes such as `bg-bg`, `text-fg`, `text-muted` and `border-line`.
 

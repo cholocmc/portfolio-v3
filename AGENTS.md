@@ -4,7 +4,7 @@ Personal portfolio site for Carlos Miguel (Cholo) Canonizado — a single-page N
 
 ## Stack
 
-- Next.js 16 (App Router, fully static), React 19, TypeScript
+- Next.js 16 (App Router, statically prerendered with a daily revalidate), React 19, TypeScript
 - Tailwind CSS 4 (CSS-first config in `app/globals.css`, no `tailwind.config`)
 - Fonts via `next/font/google`: Space Grotesk (sans) and JetBrains Mono (mono)
 
@@ -28,6 +28,7 @@ No test suite or linter is configured; `npm run build` is the check.
 - `components/` — one file per section, plus `Nav`, `ThemeToggle`, `ScrollLink`, `SectionHeading`
 - `lib/data.ts` — **all copy and links** (jobs, projects, skills, socials, email, Apollo URL). Edit content here, not in components.
 - `lib/scroll.ts` — eased in-page scrolling
+- `lib/github.ts` + `components/ContributionGraph.tsx` — GitHub contributions graph at the top of Projects. Data comes from the public `github-contributions-api.jogruber.de` (no token) for `GITHUB_USERNAME`, revalidated daily, so `/` is prerendered with a 1-day revalidate. If the fetch fails, the graph renders nothing.
 - `public/icons/*.svg` — skill and social icons (monochrome black); `public/projects/*.jpg` — project screenshots
 
 ## Conventions

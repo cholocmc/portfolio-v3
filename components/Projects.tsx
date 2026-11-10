@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { projects } from "@/lib/data";
+import { ContributionGraph } from "./ContributionGraph";
 import { SectionHeading } from "./SectionHeading";
 
 export function Projects() {
@@ -9,6 +10,8 @@ export function Projects() {
         <SectionHeading num="02" id="projects-title">
           Projects
         </SectionHeading>
+
+        <ContributionGraph />
 
         <div className="flex flex-col gap-6">
           {projects.map((p) => (
