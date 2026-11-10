@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .bg { fill: #0A0A0A; } .c { fill: none; stroke: #F5F5F5; } .dot { fill: #F5F5F5; }
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #FAFAFA; } .c { stroke: #0A0A0A; } .dot { fill: #0A0A0A; }
+    }
+  </style>
+  <rect class="bg" width="64" height="64"/>
+  <path class="c" d="M47 15.5H17.5V48.5H47" stroke-width="9"/>
+  <rect class="dot" x="40" y="28" width="8" height="8"/>
+</svg>
