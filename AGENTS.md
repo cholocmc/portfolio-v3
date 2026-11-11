@@ -25,6 +25,7 @@ No test suite or linter is configured; `npm run build` is the check.
 - `app/page.tsx` — composes the page: `Nav`, then `Hero`, `Work`, `Projects`, `Skills`, `Contact`, footer
 - `app/globals.css` — theme tokens, custom utilities, theme-transition CSS
 - `app/icon.svg` — favicon (adapts to the OS color scheme)
+- `app/opengraph-image.tsx` + `app/twitter-image.tsx` — link-preview card (1200×630), both rendered by `lib/og.tsx` at build time. Its text comes from `quickFacts` and `SITE_URL` in `lib/data.ts`; its colors are hard-coded copies of the dark tokens, because satori can't read CSS variables. Fonts are fetched from Google Fonts at build time, with a fallback to the default font if offline.
 - `components/` — one file per section, plus `Nav`, `ThemeToggle`, `ScrollLink`, `SectionHeading`
 - `lib/data.ts` — **all copy and links** (jobs, projects, skills, socials, email, Apollo URL). Edit content here, not in components.
 - `lib/scroll.ts` — eased in-page scrolling

@@ -5,6 +5,14 @@ export const EMAIL = "canonizadocarlos@gmail.com";
 
 export const GITHUB_USERNAME = "cholocmc";
 
+// Canonical URL; used for metadataBase so link previews get absolute image URLs.
+export const SITE_URL = "https://www.cholocmc.com";
+
+export const SITE_TITLE = "Carlos Miguel (Cholo) Canonizado";
+
+export const SITE_DESCRIPTION =
+  "Tech Lead & Software Engineer building conversational AI agents. Previously led the Apollo.io Chrome Extension team from 100k to 600k+ installs.";
+
 export const navLinks = [
   { id: "work", label: "Work experience" },
   { id: "projects", label: "Projects" },

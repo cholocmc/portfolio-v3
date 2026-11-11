@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/lib/data";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -16,10 +17,25 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+// The preview image itself comes from app/opengraph-image.tsx (and twitter-image.tsx).
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "CholoCMC",
-  description:
-    "Carlos Miguel (Cholo) Canonizado — Tech Lead & Software Engineer",
+  description: SITE_DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "CholoCMC",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export const viewport: Viewport = {
