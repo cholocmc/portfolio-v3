@@ -16,14 +16,14 @@ export function Projects() {
         <div className="flex flex-col gap-6">
           {projects.map((p) => (
             <article key={p.title} className="flex flex-wrap border border-line-strong bg-panel">
-              <div className="relative min-w-0 flex-[1_1_340px] border-r border-line bg-bg">
+              <div className="relative flex min-w-0 flex-[1_1_340px] items-center border-r border-line bg-bg">
                 <Image
                   src={p.img}
                   alt={p.alt}
-                  width={1200}
-                  height={750}
+                  width={1440}
+                  height={900}
                   sizes="(min-width: 1200px) 500px, 100vw"
-                  className="block aspect-[16/10] h-full min-h-[220px] w-full object-cover"
+                  className="block aspect-[16/10] h-auto w-full object-contain"
                 />
                 <span className="absolute top-3 left-3 border border-line-strong bg-bg px-2 py-1 font-mono text-xs text-fg">
                   {p.idx}
