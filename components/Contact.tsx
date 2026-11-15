@@ -1,4 +1,5 @@
 import { EMAIL, socials } from "@/lib/data";
+import { MailIcon } from "./MailIcon";
 import { SectionHeading } from "./SectionHeading";
 
 export function Contact() {
@@ -18,7 +19,16 @@ export function Contact() {
           </a>
           . Here are my socials:
         </p>
-        <ul aria-label="Social links" className="mt-9 flex list-none flex-wrap gap-2.5 p-0">
+        <ul aria-label="Contact links" className="mt-9 flex list-none flex-wrap gap-2.5 p-0">
+          <li>
+            <a
+              href={`mailto:${EMAIL}`}
+              className="inline-flex min-h-12 items-center gap-2.5 border border-fg bg-fg px-[18px] text-[15px] font-medium text-bg no-underline transition-opacity hover:opacity-85"
+            >
+              <MailIcon size={18} />
+              Email me
+            </a>
+          </li>
           {socials.map((so) => (
             <li key={so.name}>
               <a

@@ -1,15 +1,15 @@
-import { APOLLO_EXTENSION_URL, quickFacts } from "@/lib/data";
+import { APOLLO_EXTENSION_URL, EMAIL, quickFacts, socials } from "@/lib/data";
+import { MailIcon } from "./MailIcon";
 import { ScrollLink } from "./ScrollLink";
+
+// The two profiles recruiters and clients go to next; the rest live in Contact.
+const profiles = socials.filter((s) => s.name === "LinkedIn" || s.name === "GitHub");
 
 export function Hero() {
   return (
     <section aria-labelledby="hero-name" className="bg-grid relative border-b border-line">
       <div className="px-gutter mx-auto flex max-w-[1200px] flex-wrap items-end gap-x-16 gap-y-12 pt-[clamp(64px,11vw,144px)] pb-[clamp(56px,8vw,112px)]">
         <div className="min-w-0 flex-[999_1_560px]">
-          <p className="mb-6 inline-flex items-center gap-2.5 border border-line-strong bg-bg px-3 py-1.5 font-mono text-xs tracking-[0.08em] text-muted uppercase">
-            <span aria-hidden="true" className="inline-block h-1.5 w-1.5 rounded-full bg-fg" />
-            Software Engineer &lt;&gt; Philippines
-          </p>
           <h1
             id="hero-name"
             className="m-0 text-[clamp(44px,7.6vw,112px)] leading-[0.95] font-semibold tracking-[-0.035em]"
@@ -49,12 +49,27 @@ export function Hero() {
                 <path d="M12 4v16M5 13l7 7 7-7" />
               </svg>
             </ScrollLink>
-            <ScrollLink
-              to="contact"
+            <a
+              href={`mailto:${EMAIL}`}
               className="inline-flex min-h-12 items-center gap-2.5 border border-line-strong bg-bg px-[22px] font-medium text-fg no-underline transition-colors hover:border-fg"
             >
-              Contact me
-            </ScrollLink>
+              <MailIcon />
+              Email me
+            </a>
+            {profiles.map((p) => (
+              <a
+                key={p.name}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${p.name} profile`}
+                title={p.name}
+                className="inline-flex h-12 w-12 items-center justify-center border border-line-strong bg-bg transition-colors hover:border-fg"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={p.icon} alt="" width={18} height={18} className="block dark:invert" />
+              </a>
+            ))}
           </div>
         </div>
 

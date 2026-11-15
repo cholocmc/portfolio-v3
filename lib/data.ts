@@ -13,11 +13,12 @@ export const SITE_TITLE = "Carlos Miguel (Cholo) Canonizado";
 export const SITE_DESCRIPTION =
   "Tech Lead & Software Engineer building conversational AI agents. Previously led the Apollo.io Chrome Extension team from 100k to 600k+ installs.";
 
+// `short` is shown on phones so the sticky header stays two rows instead of three.
 export const navLinks = [
-  { id: "work", label: "Work experience" },
-  { id: "projects", label: "Projects" },
-  { id: "skills", label: "Skills and interests" },
-  { id: "contact", label: "Contact me" },
+  { id: "work", label: "Work experience", short: "Work" },
+  { id: "projects", label: "Projects", short: "Projects" },
+  { id: "skills", label: "Skills and interests", short: "Skills" },
+  { id: "contact", label: "Contact me", short: "Contact" },
 ] as const;
 
 export const quickFacts = [
@@ -265,10 +266,11 @@ export const skills: SkillRow[] = [
   },
 ];
 
+// LinkedIn and GitHub lead: they're where recruiters and clients go next.
 export const socials = [
-  { name: "TikTok", url: "https://www.tiktok.com/@cholocmc", icon: "/icons/tiktok.svg" },
   { name: "LinkedIn", url: "https://www.linkedin.com/in/cholocmc", icon: "/icons/linkedin.svg" },
   { name: "GitHub", url: "https://www.github.com/cholocmc", icon: "/icons/github.svg" },
+  { name: "TikTok", url: "https://www.tiktok.com/@cholocmc", icon: "/icons/tiktok.svg" },
   { name: "Facebook", url: "https://www.facebook.com/cholocmc", icon: "/icons/facebook.svg" },
   { name: "Instagram", url: "https://www.instagram.com/cholocmc", icon: "/icons/instagram.svg" },
   { name: "Threads", url: "https://www.threads.com/@cholocmc", icon: "/icons/threads.svg" },

@@ -174,10 +174,12 @@ A tonal grayscale in two mirrored themes. Every value is a CSS variable on `:roo
 - **Lead** (400, `clamp(17px, 1.6vw, 19px)`, 1.6, max 640px): the hero summary, capped at 19px so it fits in five lines at 1440px. The contact sentence is a larger lead (`clamp(20px, 2.2vw, 28px)`, 1.45, max 820px).
 - **Body** (400, 16px): bullets, descriptions, and tile text (tiles and buttons use 15px).
 - **Label** (400, 13px mono): dates, locations, `[NN]` indexes, project URLs, graph captions. Use 12px for tags and the `P/01` badge, and 11px for chart axes.
-- **Label Caps** (400, 12px mono, 0.08em tracking): the hero eyebrow (uppercase) and the `S/01` / `NOW` row indexes.
+- **Label Caps** (400, 12px mono, 0.08em tracking): the `S/01` / `NOW` row indexes.
 
 ### Named Rules
 **The Mono-Means-Metadata Rule.** If it's an index, date, place, URL, count, or tag, it's mono and usually muted. If it's a claim or a name, it's sans.
+
+**The Figures-Forward Rule.** Numbers in work bullets ("100k to 600k+", "10x", "60%") render at full `fg` contrast and medium weight against the `soft` prose, so a skim lands on the outcomes. This is done automatically in `Work`; never hand-bold other words.
 
 **The Tight-Tracking Rule.** Tracking tightens as size grows: -0.035em for display, -0.03em for headlines, -0.02em for titles, 0 for body.
 
@@ -203,7 +205,7 @@ Flat. There are no box-shadows anywhere. Depth comes from tonal layering (`bg` <
 
 ## Shapes
 
-Square everything: 0px radius on buttons, cards, tiles, tags, badges, panels, and graph cells. Borders are always 1px. Small marks are squares too: the 10px logo block, 5px bullets, 9px outlined timeline nodes, and the 8px terminal "window" squares. The one deliberate circle is the 6px status dot in the hero eyebrow. The theme toggle's circular reveal is motion, not shape.
+Square everything: 0px radius on buttons, cards, tiles, tags, badges, panels, and graph cells. Borders are always 1px. Small marks are squares too: the 10px logo block, 5px bullets, 9px outlined timeline nodes, and the 8px terminal "window" squares. There are no circles. The theme toggle's circular reveal is motion, not shape.
 
 Line icons use `stroke-linecap="square"` on arrows to match.
 
@@ -219,12 +221,13 @@ Tactile and confident: firm frames, solid fills, quick color-only responses.
 - **Primary:** `fg` fill and border with `bg` text (inverted). Hover fades to 85% opacity.
 - **Secondary:** `bg` fill, `line-strong` border, `fg` text. Hover darkens the border to `fg`.
 - **Icon (theme toggle):** 44×44, transparent, `line-strong` border. Hover tints to `fg/5`.
+- **Icon link (hero LinkedIn / GitHub):** 48×48, `bg` fill, `line-strong` border, 18px monochrome brand icon. Hover darkens the border to `fg`. Accessible name comes from `aria-label`.
+- **Contact actions:** email is always a real `mailto:` link with the authored envelope icon. In Hero it's the secondary button beside "View my work"; in Contact it's the primary button leading the social links.
 - **Focus:** global 2px solid `fg` outline at 2px offset on every focusable element.
 
 ### Chips
 - **Tag:** 1px `line` border, no fill, 12px mono `muted` text, 4×10px padding. Static; tags are labels, not filters.
 - **Index badge:** `bg` fill, `line-strong` border, 12px mono `fg` text. Floats at the top-left of a project screenshot (`P/01`).
-- **Eyebrow:** `bg` fill, `line-strong` border, 12px uppercase mono with 0.08em tracking, led by the 6px round `fg` dot.
 
 ### Cards / Containers
 - **Corner Style:** square (0px).
@@ -236,7 +239,7 @@ Tactile and confident: firm frames, solid fills, quick color-only responses.
 
 ### Navigation
 - **Header:** sticky, `nav` veil + backdrop blur, bottom hairline. Logo is a 10px `fg` square + `cholocmc` in 14px mono medium.
-- **Links:** 15px sans `fg`, 44px tall, 12px padding. Hover underlines at 4px offset. Links wrap onto a second line on phones (the header grows; `--header-h` follows).
+- **Links:** 15px sans `fg`, 44px tall, 12px padding. Hover underlines at 4px offset. Below 640px the links show their `short` labels (Work, Projects, Skills, Contact) with 8px padding, so the header stays at two rows; `--header-h` follows its real height.
 - **In-page links:** always `ScrollLink`, eased scroll that honors reduced motion.
 
 ### Quick-Facts Panel (signature)
@@ -259,7 +262,7 @@ A `panel` figure whose cells are an opacity ramp of `fg` (7%, 25%, 45%, 70%, 100
 - **Do** give monochrome icons `dark:invert`, and check both themes.
 
 ### Don't:
-- **Don't** use `border-radius`. The only circle is the hero status dot.
+- **Don't** use `border-radius`, and don't put an eyebrow label above the hero name.
 - **Don't** add box-shadows, glows, gradients, or hover lift.
 - **Don't** hard-code hex values in components, or add an accent hue as a one-off. If an accent arrives, it arrives as a token in both themes.
 - **Don't** set prose in mono, or metadata in sans.

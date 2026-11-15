@@ -1,45 +1,191 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-15T00:00:00Z",
+  "generatedAt": "2026-11-15T15:01:53.622Z",
   "title": "Design System: CholoCMC",
   "extensions": {
     "colorMeta": {
-      "dark-ink-black": { "role": "neutral", "displayName": "Ink Black (dark bg)", "canonical": "#0a0a0a", "tonalRamp": ["#0a0a0a", "#171717", "#262626", "#404040", "#525252", "#737373", "#a3a3a3", "#e5e5e5"] },
-      "dark-paper-white": { "role": "primary", "displayName": "Paper White (dark fg)", "canonical": "#f5f5f5", "tonalRamp": ["#0a0a0a", "#171717", "#262626", "#404040", "#525252", "#737373", "#a3a3a3", "#f5f5f5"] },
-      "dark-soft-silver": { "role": "neutral", "displayName": "Soft Silver (dark reading text)", "canonical": "#d4d4d4" },
-      "dark-muted-ash": { "role": "neutral", "displayName": "Muted Ash (dark metadata)", "canonical": "#a3a3a3" },
-      "dark-panel-carbon": { "role": "neutral", "displayName": "Panel Carbon", "canonical": "#111111" },
-      "dark-band-graphite": { "role": "neutral", "displayName": "Band Graphite", "canonical": "#0e0e0e" },
-      "dark-nav-veil": { "role": "neutral", "displayName": "Nav Veil (dark)", "canonical": "rgba(10, 10, 10, 0.82)" },
-      "dark-hairline": { "role": "neutral", "displayName": "Hairline (dark)", "canonical": "rgba(255, 255, 255, 0.12)" },
-      "dark-hairline-strong": { "role": "neutral", "displayName": "Hairline Strong (dark)", "canonical": "rgba(255, 255, 255, 0.28)" },
-      "dark-grid-trace": { "role": "neutral", "displayName": "Grid Trace (dark)", "canonical": "rgba(255, 255, 255, 0.05)" },
-      "light-paper": { "role": "neutral", "displayName": "Paper (light bg)", "canonical": "#fafafa", "tonalRamp": ["#0a0a0a", "#262626", "#404040", "#525252", "#737373", "#a3a3a3", "#e5e5e5", "#fafafa"] },
-      "light-ink": { "role": "primary", "displayName": "Ink (light fg)", "canonical": "#0a0a0a" },
-      "light-soft-charcoal": { "role": "neutral", "displayName": "Soft Charcoal (light reading text)", "canonical": "#262626" },
-      "light-muted-slate": { "role": "neutral", "displayName": "Muted Slate (light metadata)", "canonical": "#525252" },
-      "light-panel-white": { "role": "neutral", "displayName": "Panel White", "canonical": "#ffffff" },
-      "light-band-fog": { "role": "neutral", "displayName": "Band Fog", "canonical": "#f2f2f2" },
-      "light-nav-veil": { "role": "neutral", "displayName": "Nav Veil (light)", "canonical": "rgba(250, 250, 250, 0.85)" },
-      "light-hairline": { "role": "neutral", "displayName": "Hairline (light)", "canonical": "rgba(0, 0, 0, 0.12)" },
-      "light-hairline-strong": { "role": "neutral", "displayName": "Hairline Strong (light)", "canonical": "rgba(0, 0, 0, 0.28)" },
-      "light-grid-trace": { "role": "neutral", "displayName": "Grid Trace (light)", "canonical": "rgba(0, 0, 0, 0.05)" }
+      "dark-ink-black": {
+        "role": "neutral",
+        "displayName": "Ink Black (dark bg)",
+        "canonical": "#0a0a0a",
+        "tonalRamp": [
+          "#0a0a0a",
+          "#171717",
+          "#262626",
+          "#404040",
+          "#525252",
+          "#737373",
+          "#a3a3a3",
+          "#e5e5e5"
+        ]
+      },
+      "dark-paper-white": {
+        "role": "primary",
+        "displayName": "Paper White (dark fg)",
+        "canonical": "#f5f5f5",
+        "tonalRamp": [
+          "#0a0a0a",
+          "#171717",
+          "#262626",
+          "#404040",
+          "#525252",
+          "#737373",
+          "#a3a3a3",
+          "#f5f5f5"
+        ]
+      },
+      "dark-soft-silver": {
+        "role": "neutral",
+        "displayName": "Soft Silver (dark reading text)",
+        "canonical": "#d4d4d4"
+      },
+      "dark-muted-ash": {
+        "role": "neutral",
+        "displayName": "Muted Ash (dark metadata)",
+        "canonical": "#a3a3a3"
+      },
+      "dark-panel-carbon": {
+        "role": "neutral",
+        "displayName": "Panel Carbon",
+        "canonical": "#111111"
+      },
+      "dark-band-graphite": {
+        "role": "neutral",
+        "displayName": "Band Graphite",
+        "canonical": "#0e0e0e"
+      },
+      "dark-nav-veil": {
+        "role": "neutral",
+        "displayName": "Nav Veil (dark)",
+        "canonical": "rgba(10, 10, 10, 0.82)"
+      },
+      "dark-hairline": {
+        "role": "neutral",
+        "displayName": "Hairline (dark)",
+        "canonical": "rgba(255, 255, 255, 0.12)"
+      },
+      "dark-hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong (dark)",
+        "canonical": "rgba(255, 255, 255, 0.28)"
+      },
+      "dark-grid-trace": {
+        "role": "neutral",
+        "displayName": "Grid Trace (dark)",
+        "canonical": "rgba(255, 255, 255, 0.05)"
+      },
+      "light-paper": {
+        "role": "neutral",
+        "displayName": "Paper (light bg)",
+        "canonical": "#fafafa",
+        "tonalRamp": [
+          "#0a0a0a",
+          "#262626",
+          "#404040",
+          "#525252",
+          "#737373",
+          "#a3a3a3",
+          "#e5e5e5",
+          "#fafafa"
+        ]
+      },
+      "light-ink": {
+        "role": "primary",
+        "displayName": "Ink (light fg)",
+        "canonical": "#0a0a0a"
+      },
+      "light-soft-charcoal": {
+        "role": "neutral",
+        "displayName": "Soft Charcoal (light reading text)",
+        "canonical": "#262626"
+      },
+      "light-muted-slate": {
+        "role": "neutral",
+        "displayName": "Muted Slate (light metadata)",
+        "canonical": "#525252"
+      },
+      "light-panel-white": {
+        "role": "neutral",
+        "displayName": "Panel White",
+        "canonical": "#ffffff"
+      },
+      "light-band-fog": {
+        "role": "neutral",
+        "displayName": "Band Fog",
+        "canonical": "#f2f2f2"
+      },
+      "light-nav-veil": {
+        "role": "neutral",
+        "displayName": "Nav Veil (light)",
+        "canonical": "rgba(250, 250, 250, 0.85)"
+      },
+      "light-hairline": {
+        "role": "neutral",
+        "displayName": "Hairline (light)",
+        "canonical": "rgba(0, 0, 0, 0.12)"
+      },
+      "light-hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong (light)",
+        "canonical": "rgba(0, 0, 0, 0.28)"
+      },
+      "light-grid-trace": {
+        "role": "neutral",
+        "displayName": "Grid Trace (light)",
+        "canonical": "rgba(0, 0, 0, 0.05)"
+      }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "The name in the hero, nowhere else." },
-      "headline": { "displayName": "Headline", "purpose": "Section titles, preceded by a mono [NN] index." },
-      "title": { "displayName": "Title", "purpose": "Project names; company and skill-group names use close siblings." },
-      "subtitle": { "displayName": "Subtitle", "purpose": "Role titles inside a job." },
-      "lead": { "displayName": "Lead", "purpose": "Hero summary, capped at 19px / 640px." },
-      "body": { "displayName": "Body", "purpose": "Bullets, descriptions, tile text." },
-      "label": { "displayName": "Label", "purpose": "Mono metadata: dates, locations, indexes, URLs, captions." },
-      "label-caps": { "displayName": "Label Caps", "purpose": "Hero eyebrow and S/01 / NOW row indexes." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name in the hero, nowhere else."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, preceded by a mono [NN] index."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project names; company and skill-group names use close siblings."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Role titles inside a job."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero summary, capped at 19px / 640px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Bullets, descriptions, tile text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Mono metadata: dates, locations, indexes, URLs, captions."
+      },
+      "label-caps": {
+        "displayName": "Label Caps",
+        "purpose": "S/01 / NOW row indexes."
+      }
     },
     "shadows": [],
     "motion": [
-      { "name": "theme-reveal", "value": "650ms cubic-bezier(0.65, 0, 0.35, 1)", "purpose": "Circular View Transition reveal from the theme toggle." },
-      { "name": "theme-fade", "value": "450ms ease", "purpose": "Color cross-fade fallback when View Transitions are unavailable." },
-      { "name": "hover-color", "value": "150ms (Tailwind transition-colors / transition-opacity default)", "purpose": "Border, text, and opacity changes on hover." }
+      {
+        "name": "theme-reveal",
+        "value": "650ms cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Circular View Transition reveal from the theme toggle."
+      },
+      {
+        "name": "theme-fade",
+        "value": "450ms ease",
+        "purpose": "Color cross-fade fallback when View Transitions are unavailable."
+      },
+      {
+        "name": "hover-color",
+        "value": "150ms (Tailwind transition-colors / transition-opacity default)",
+        "purpose": "Border, text, and opacity changes on hover."
+      }
     ],
     "breakpoints": []
   },
@@ -121,15 +267,56 @@
       "Flex-wrap layouts with grow/basis pairs instead of breakpoints"
     ],
     "rules": [
-      { "name": "The Grayscale-First Rule", "body": "The system is monochrome today, and contrast and weight do all the emphasis. A single accent hue may be introduced later as a deliberate system change, defined as a token in both themes. Never sneak one in as a one-off in a component.", "section": "colors" },
-      { "name": "The Token-Only Rule", "body": "Components use theme tokens, never hex values. Opacity steps of fg (fg/5, fg/25, fg/45, fg/70) are the sanctioned way to get intermediate grays, as in the contribution graph and the icon-button hover.", "section": "colors" },
-      { "name": "The Two-Theme Mirror Rule", "body": "Every token exists in both themes with the same role. Monochrome icons get dark:invert. If something only works in one theme, it isn't done.", "section": "colors" },
-      { "name": "The Mono-Means-Metadata Rule", "body": "If it's an index, date, place, URL, count, or tag, it's mono and usually muted. If it's a claim or a name, it's sans.", "section": "typography" },
-      { "name": "The Tight-Tracking Rule", "body": "Tracking tightens as size grows: -0.035em for display, -0.03em for headlines, -0.02em for titles, 0 for body.", "section": "typography" },
-      { "name": "The Basis-Not-Breakpoint Rule", "body": "Responsiveness comes from flex basis and auto-fill grids, never from breakpoint-specific layouts. Check every change at 375px: no horizontal page scroll. The contribution graph is the one sanctioned inner horizontal scroller, and it opens at the most recent weeks.", "section": "layout" },
-      { "name": "The 44 Rule", "body": "Every interactive target is at least 44px tall (min-h-11). Primary buttons, social links, and skill tiles are 48px (min-h-12).", "section": "layout" },
-      { "name": "The No-Shadow Rule", "body": "Surfaces never lift. Hover states change a border, an opacity, or an underline, never a shadow or a transform.", "section": "elevation" },
-      { "name": "The Zero-Radius Rule", "body": "No border-radius. If a new element looks wrong square, change its proportions, not its corners.", "section": "shapes" }
+      {
+        "name": "The Grayscale-First Rule",
+        "body": "The system is monochrome today, and contrast and weight do all the emphasis. A single accent hue may be introduced later as a deliberate system change, defined as a token in both themes. Never sneak one in as a one-off in a component.",
+        "section": "colors"
+      },
+      {
+        "name": "The Token-Only Rule",
+        "body": "Components use theme tokens, never hex values. Opacity steps of fg (fg/5, fg/25, fg/45, fg/70) are the sanctioned way to get intermediate grays, as in the contribution graph and the icon-button hover.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Theme Mirror Rule",
+        "body": "Every token exists in both themes with the same role. Monochrome icons get dark:invert. If something only works in one theme, it isn't done.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono-Means-Metadata Rule",
+        "body": "If it's an index, date, place, URL, count, or tag, it's mono and usually muted. If it's a claim or a name, it's sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Figures-Forward Rule",
+        "body": "Numbers in work bullets (\"100k to 600k+\", \"10x\", \"60%\") render at full fg contrast and medium weight against the soft prose, so a skim lands on the outcomes. This is done automatically in Work; never hand-bold other words.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tight-Tracking Rule",
+        "body": "Tracking tightens as size grows: -0.035em for display, -0.03em for headlines, -0.02em for titles, 0 for body.",
+        "section": "typography"
+      },
+      {
+        "name": "The Basis-Not-Breakpoint Rule",
+        "body": "Responsiveness comes from flex basis and auto-fill grids, never from breakpoint-specific layouts. Check every change at 375px: no horizontal page scroll. The contribution graph is the one sanctioned inner horizontal scroller, and it opens at the most recent weeks.",
+        "section": "layout"
+      },
+      {
+        "name": "The 44 Rule",
+        "body": "Every interactive target is at least 44px tall (min-h-11). Primary buttons, social links, and skill tiles are 48px (min-h-12).",
+        "section": "layout"
+      },
+      {
+        "name": "The No-Shadow Rule",
+        "body": "Surfaces never lift. Hover states change a border, an opacity, or an underline, never a shadow or a transform.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Zero-Radius Rule",
+        "body": "No border-radius. If a new element looks wrong square, change its proportions, not its corners.",
+        "section": "shapes"
+      }
     ],
     "dos": [
       "Do take every color from theme tokens (bg, fg, soft, muted, panel, band, nav, line, line-strong) or opacity steps of fg.",
@@ -140,7 +327,7 @@
       "Do give monochrome icons dark:invert, and check both themes."
     ],
     "donts": [
-      "Don't use border-radius. The only circle is the hero status dot.",
+      "Don't use border-radius, and don't put an eyebrow label above the hero name.",
       "Don't add box-shadows, glows, gradients, or hover lift.",
       "Don't hard-code hex values in components, or add an accent hue as a one-off. If an accent arrives, it arrives as a token in both themes.",
       "Don't set prose in mono, or metadata in sans.",

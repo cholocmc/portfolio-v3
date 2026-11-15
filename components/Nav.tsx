@@ -42,9 +42,10 @@ export function Nav() {
             <ScrollLink
               key={l.id}
               to={l.id}
-              className="inline-flex min-h-11 items-center px-3 text-[15px] text-fg no-underline underline-offset-4 hover:underline"
+              className="inline-flex min-h-11 items-center px-2 text-[15px] text-fg no-underline underline-offset-4 hover:underline sm:px-3"
             >
-              {l.label}
+              <span className="sm:hidden">{l.short}</span>
+              <span className="hidden sm:inline">{l.label}</span>
             </ScrollLink>
           ))}
           <ThemeToggle />

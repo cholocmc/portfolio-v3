@@ -77,6 +77,14 @@
     outline: 2px solid var(--fg);
     outline-offset: 2px;
   }
+  /* Browser surfaces follow the theme too: inverted selection, hairline scrollbars. */
+  ::selection {
+    background: var(--fg);
+    color: var(--bg);
+  }
+  html {
+    scrollbar-color: var(--line-strong) var(--bg);
+  }
 }
 
 /* ---- Theme switch transition ---------------------------------------------

@@ -1,5 +1,26 @@
+import type { ReactNode } from "react";
 import { jobs } from "@/lib/data";
 import { SectionHeading } from "./SectionHeading";
+
+// Figures like "10x", "60%", or "100k to 600k+". The leading \b skips version names such as "V3".
+const METRIC = /\b\d+(?:\.\d+)?(?:k|x|%)?\+?(?: to \d+(?:\.\d+)?(?:k|x|%)?\+?)?/g;
+
+/** Lift the numbers in a bullet to full contrast, so a skim lands on the outcomes. */
+function withMetrics(text: string) {
+  const parts: ReactNode[] = [];
+  let last = 0;
+  for (const m of text.matchAll(METRIC)) {
+    parts.push(text.slice(last, m.index));
+    parts.push(
+      <strong key={m.index} className="font-medium text-fg">
+        {m[0]}
+      </strong>,
+    );
+    last = m.index + m[0].length;
+  }
+  parts.push(text.slice(last));
+  return parts;
+}
 
 export function Work() {
   return (
@@ -52,7 +73,7 @@ export function Work() {
                     {role.bullets.map((b) => (
                       <li key={b} className="flex gap-3.5 text-soft">
                         <span aria-hidden="true" className="mt-[11px] h-[5px] w-[5px] flex-none bg-muted" />
-                        <span>{b}</span>
+                        <span>{withMetrics(b)}</span>
                       </li>
                     ))}
                   </ul>
