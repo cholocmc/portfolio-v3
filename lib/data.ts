@@ -146,13 +146,13 @@ export type Project = {
 export const projects: Project[] = [
   {
     idx: "P/01",
-    title: "Budget Mate",
+    title: "BudgetMate",
     img: "/projects/budget-mate.jpg",
-    alt: "Screenshot of the Budget Mate web app",
+    alt: "Screenshot of the BudgetMate web app",
     link: "https://github.com/cholocmc/budget-tracker",
     site: "https://www.budgetmate.tech/",
     desc: [
-      "Budget Mate is a shared household budgeting web app. Users set a budget for each category, log what they actually spend, and see the gap every month through a chart that compares planned against actual spending.",
+      "BudgetMate is a shared household budgeting web app. Users set a budget for each category, log what they actually spend, and see the gap every month through a chart that compares planned against actual spending.",
       "Members join a household with a shared code, so everyone can add, edit, and track bills, owners, and due dates in one place. Recurring bills can be copied over to the next month, and the app works on both phone and desktop in light or dark mode.",
     ],
     tags: ["TypeScript", "Next.js", "Supabase"],

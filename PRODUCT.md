@@ -31,7 +31,7 @@ A Tech Lead who ships conversational AI agents (AOPs across chat, email, and voi
 
 - Visitors evaluate him in a few minutes, often on a phone after tapping a link.
 - The GitHub contributions graph (live, revalidated daily) is shown as proof of ongoing activity.
-- Project entries link to live sites and repos (Budget Mate at budgetmate.tech, plus GitHub repos).
+- Project entries link to live sites and repos (BudgetMate at budgetmate.tech, plus GitHub repos).
 
 ## Capabilities and Constraints
 
@@ -49,7 +49,7 @@ A Tech Lead who ships conversational AI agents (AOPs across chat, email, and voi
 ## Evidence on Hand
 
 - Work history with quantified outcomes: Apollo extension installs from 100k to 600k+, CRM/Apollo Everywhere adoption from 10% to 30%, 10x faster load from IndexedDB caching, 60% fewer Pusher connections, and tripled high ratings (`lib/data.ts`, `jobs`).
-- Four projects with screenshots in `public/projects/`: Budget Mate, Komunidad, Sign Me Up (won best in research for the Computer Science category at the 2nd ICS Mini-Symposium, UPLB), and Super Smash Bros (featured in the 2019 UPLB ICS exhibit).
+- Four projects with screenshots in `public/projects/`: BudgetMate, Komunidad, Sign Me Up (won best in research for the Computer Science category at the 2nd ICS Mini-Symposium, UPLB), and Super Smash Bros (featured in the 2019 UPLB ICS exhibit).
 - Skill and social icons in `public/icons/`.
 - Education: BS Computer Science, UPLB.
 - **No testimonials, client logos, or references exist.** Don't invent them, and don't add metrics that aren't already in `lib/data.ts`.
